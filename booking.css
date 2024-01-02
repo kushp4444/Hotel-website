@@ -1,0 +1,499 @@
+/* CSS for jquery.fancyform.js */
+@import '../font/font-awesome.css';
+/* CSS for jquery.fancyform.js */
+/*custom mixins */
+/*end custom mixins */
+/* Control Holder */
+#bookingForm {
+  position: relative;
+  width: 100%;
+  margin: 38px 0;
+  font: 13px/17px 'Open Sans';
+}
+#bookingForm input,
+#bookingForm textarea {
+  outline: none;
+  -webkit-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: 0px #ccc solid;
+  color: #464646;
+  background: #fff;
+  padding: 18px 10px 18px 30px;
+  line-height: 15px;
+  width: 100%;
+  height: 53px;
+}
+#bookingForm input::-webkit-input-placeholder {
+  color: #464646;
+}
+#bookingForm input:-moz-placeholder {
+  color: #464646;
+}
+#bookingForm textarea {
+  height: 53px;
+  resize: none;
+  font: 13px/17px 'Open Sans';
+}
+#bookingForm .wide {
+width: 428%;
+}
+#bookingForm .bf-Btn{
+  display: inline-block;
+  float: right;
+  width: 14.871794871794871794871794871795%;
+  height: 100%;
+  position: relative;
+}
+#bookingForm .bf-Btn a {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  position: absolute;
+  left: 0;
+  top: -39px;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #272727;
+  text-align: center;
+  padding: 18px 0 17px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+#bookingForm .bf-Btn a:hover {
+  background: #fff;
+  color: #272727;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.controlHolder {
+  position: relative;
+  margin: 0 1.7094017094017094017094017094017% 20px 0;
+  display: block;
+  float: left;
+//  width: 26.666666666666666666666666666667%;
+  width: 19.6%;
+}
+/* Messages */
+.error-message {
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  font-weight: normal;
+  text-align: right;
+  width: 100%;
+  font-size: 10px;
+  line-height: 1em;
+  color: gray;
+  z-index: 4;
+  color: #fe5353;
+}
+.success-message {
+  position: relative;
+  text-align: left;
+  color: gray;
+  margin: 16px -2px 16px 1px;
+  color: #fff;
+  background: #003399;
+}
+/* transformSelect CSS */
+/* 1st type of select */
+.tmSelect,
+.tmSelect2 {
+  clear: both;
+  width: 100%;
+  margin: 0px;
+}
+.tmSelect li,
+.tmSelect2 li {
+  position: relative;
+  list-style: none;
+}
+.tmSelect span,
+.tmSelect2 span,
+.tmSelect input[type=text],
+.tmSelect2 input[type=text] {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+.tmSelect:after,
+.tmSelect2:after {
+  content: '';
+  position: absolute;
+  top: 17px;
+  right: 25px;
+  font: normal normal 0px/0px 'FontAwesome';
+  color: #464646;
+  z-index: 4;
+}
+.tmSelect.auto,
+.tmSelect2.auto {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 ;
+  line-height: 20px;
+  -webkit-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: 0px #ccc solid;
+  color: #464646;
+  background: #fff;
+  font: 13px/17px 'Open Sans';
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.tmSelect.auto span,
+.tmSelect2.auto span {
+  background: transparent;
+}
+.tmSelect.auto ul,
+.tmSelect2.auto ul {
+  margin: 1px 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  background: #f9f9f9;
+}
+.tmSelect.auto > li:first-child > span,
+.tmSelect2.auto > li:first-child > span {
+  padding: 18px 10px 18px 30px;
+  width: 100%;
+  height: 53px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.tmSelect ul,
+.tmSelect2 ul,
+.tmSelect .transformSelectDropdown,
+.tmSelect2 .transformSelectDropdown {
+  position: absolute;
+  width: 100%;
+  max-height: 210px;
+  padding: 7px 0px;
+  margin: 0px;
+  -webkit-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: 0px #ccc solid;
+  color: #464646;
+  background: #fff;
+  font: 13px/13px 'Open Sans';
+  border-top: none;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: none;
+  background: #f9f9f9;
+  z-index: 10;
+}
+.tmSelect ul span,
+.tmSelect2 ul span,
+.tmSelect .transformSelectDropdown span,
+.tmSelect2 .transformSelectDropdown span {
+  border: 0;
+  color: #000;
+  padding: 5px 13px;
+}
+.tmSelect ul span:hover,
+.tmSelect2 ul span:hover,
+.tmSelect .transformSelectDropdown span:hover,
+.tmSelect2 .transformSelectDropdown span:hover {
+  background: #ccc;
+}
+.tmSelect ul li input[type=checkbox],
+.tmSelect2 ul li input[type=checkbox] {
+  position: relative;
+  top: 2px;
+  margin: 0 5px 0 0;
+  cursor: pointer;
+}
+/* 2nd type of select */
+.tmSelect2:after {
+  content: '';
+}
+/* Radio */
+.trans-element-radio {
+  display: inline-block;
+  display: block;
+  zoom: 1;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.tmRadio {
+  padding-left: 0;
+}
+.tmRadio p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.tmRadio p {
+  padding-bottom: 0;
+  margin-bottom: 3px;
+}
+.tmRadio input {
+  margin-right: 5px;
+}
+.tmRadio .unchecked,
+.tmRadio .checked {
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.tmRadio .unchecked:after,
+.tmRadio .checked:after {
+  content: '\f10c';
+  position: relative;
+  top: 2px;
+  font: normal normal 18px 'FontAwesome';
+  color: #464646;
+}
+.tmRadio .checked:after {
+  content: '\f05d';
+}
+/* Checkbox */
+.trans-element-checkbox {
+  cursor: pointer;
+  zoom: 1;
+}
+.trans-element-checkbox span {
+  padding-left: 40px;
+}
+.trans-element-checkbox.checked:after {
+  content: '\f046';
+}
+.trans-element-checkbox:after {
+  content: '\f096';
+  position: relative;
+  display: inline-block;
+  top: 2px;
+  width: 17px;
+  font: normal normal 18px 'FontAwesome';
+  color: #464646;
+}
+.trans-element-checkbox.unchecked:after {
+  content: '\f096';
+}
+.tmCheckbox,
+.tmRadio {
+  margin-left: 0;
+  padding-left: 0;
+  padding: 0;
+}
+.tmCheckbox span,
+.tmRadio span {
+  position: relative;
+  margin-right: 10px;
+}
+/* Datepicker */
+.tmDatepicker {
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  vertical-align: top;
+}
+.tmDatepicker:after {
+  content: '\f073';
+  position: absolute;
+  right: 42px;
+  top: 17px;
+  font: normal normal 18px/18px 'FontAwesome';
+  color: #464646;
+  z-index: 4;
+}
+.tmDatepicker:before {
+  content: '';
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  font: normal normal 18px/18px 'FontAwesome';
+  color: #464646;
+  z-index: 4;
+}
+.ui-datepicker {
+  padding: 10px;
+  width: 300px;
+  font-size: 13px;
+  display: none;
+  z-index: 100 !important;
+  -webkit-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: 0px #ccc solid;
+  color: #464646;
+  background: #fff;
+  background: #f9f9f9;
+}
+.ui-datepicker a {
+  color: #777;
+}
+.ui-datepicker a:hover {
+  color: #000;
+  text-decoration: none;
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  cursor: pointer;
+  float: left;
+}
+.ui-datepicker-next {
+  float: right;
+}
+.ui-datepicker-title {
+  text-align: center;
+}
+.ui-datepicker-calendar {
+  margin: 10px 11px;
+}
+.ui-datepicker-calendar td {
+  padding: 1px 10px;
+  text-align: center;
+}
+.ui-datepicker-calendar .ui-datepicker-current-day,
+.ui-datepicker-calendar .ui-datepicker-today {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  padding: 6px 15px;
+  border: 1px #ccc solid;
+  background: #272727;
+  color: #fff;
+  font-weight: normal;
+  padding: 3px;
+}
+.ui-datepicker-calendar .ui-datepicker-current-day:hover,
+.ui-datepicker-calendar .ui-datepicker-today:hover {
+  background: #fff;
+  color: #272727;
+}
+.ui-datepicker-calendar .ui-datepicker-today {
+  border-color: #fff;
+  background: #a6a6a6;
+}
+button.ui-state-default {
+  border: none;
+  padding: 3px 7px;
+  font: 13px/13px 'Open Sans';
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  padding: 6px 15px;
+  border: 1px #ccc solid;
+  background: #272727;
+  color: #fff;
+  font-weight: normal;
+}
+button.ui-state-default:hover {
+  background: #fff;
+  color: #272727;
+}
+.ui-datepicker-close {
+  float: right;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+@media only screen and (max-width: 1169px) {
+  #bookingForm .bf-Btn{
+    display: inline-block;
+    float: right;
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .controlHolder {
+    width: 100%;
+  }
+  .tmSelect.auto,
+  .tmSelect2.auto {
+    margin: 0;
+  }
+  .controlHolder {
+    margin: 0 0 20px;
+  }
+  .bf-Btn{
+    min-height: 80px;
+  }
+  #bookingForm .bf-Btn a{
+    top: 0;
+  }
+  #bookingForm .wide {         
+  width: 100%;
+}
+}
